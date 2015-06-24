@@ -1,7 +1,6 @@
 # projets d'exploration
 
-## Spring-boot
-- http://projects.spring.io/spring-boot/
+## [Spring-boot](http://projects.spring.io/spring-boot)
  - Pourquoi ?
  - Ce n'est pas :
   - Ce n'est pas un générateur de code

@@ -15,25 +15,15 @@
 - [Application development with Spring Boot + JS](http://spring.io/guides/gs/spring-boot-cli-and-js/)
 - ...
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## JBehave
 
-## Guava
+## AssertJ
 
-## REST
+## JUnit : Rules / Categories / Parametrize
+
+## [Guava : Filtering and Transforming Collections in Guava](http://www.baeldung.com/guava-filter-and-transform-a-collection)
+
+## [DbSetup](http://dbsetup.ninja-squad.com/user-guide.html)
+
+## REST / HATEOAS
 

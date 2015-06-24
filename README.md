@@ -12,7 +12,7 @@
  - starts.spring.io
   - starts.spring.io/heath
   - ...
-- http://spring.io/guides/gs/spring-boot/
+- [Building an Application with Spring Boot](http://spring.io/guides/gs/spring-boot/)
 - [Application development with Spring Boot + JS](http://spring.io/guides/gs/spring-boot-cli-and-js/)
 - ...
 

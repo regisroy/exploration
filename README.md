@@ -6,9 +6,9 @@
  - Ce n'est pas :
   - Ce n'est pas un générateur de code
  - ...
-- http://spring.io/guides/gs/convert-jar-to-war/
+- [Converting a Spring Boot JAR Application to a WAR](http://spring.io/guides/gs/convert-jar-to-war/)
  - ...
-- http://spring.io/guides/gs/actuator-service/
+- [Building a RESTful Web Service with Spring Boot Actuator](http://spring.io/guides/gs/actuator-service/)
  - starts.spring.io
   - starts.spring.io/heath
   - ...

@@ -26,4 +26,5 @@
 ## [DbSetup](http://dbsetup.ninja-squad.com/user-guide.html)
 
 ## REST / HATEOAS
+- [Understanding HATEOAS](http://spring.io/understanding/HATEOAS)
 

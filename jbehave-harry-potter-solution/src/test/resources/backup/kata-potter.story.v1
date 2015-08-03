@@ -1,0 +1,50 @@
+Meta:
+
+Narrative:
+En tant que utilisateur
+Je veux acheter des livres de Harry Potter
+Ainsi je vais pouvoir fournir tout l'immeuble, et ensuite la ville entière
+
+Scenario: Calculer le prix d'un livre de Harry Potter
+Given Je vais au magasin
+When J'achète 1 livre
+Then Je paie 8 euros
+Then la réduction est de 0 %
+
+Scenario: Calculer le prix de 2 livres différents de Harry Potter
+Given Je vais au magasin
+When J'achète 2 livres différents
+Then la réduction est de 5 %
+Then Je paie 15.2 euros
+
+Scenario: Calculer le prix de 3 livres différents de Harry Potter
+Given Je vais au magasin
+When J'achète 3 livres différents
+Then la réduction est de 10 %
+Then Je paie 21.6 euros
+
+Scenario: Calculer le prix de 4 livres différents de Harry Potter
+Given Je vais au magasin
+When J'achète 4 livres différents
+Then la réduction est de 20 %
+Then Je paie 25.6 euros
+
+Scenario: Calculer le prix de 5 livres différents de Harry Potter
+Given Je vais au magasin
+When J'achète 5 livres différents
+Then la réduction est de 25 %
+Then Je paie 30 euros
+
+Scenario: Calculer le prix de 2 livres identiques de Harry Potter
+Given Je vais au magasin
+When J'achète 2 livres identiques
+Then la réduction est de 0 %
+Then Je paie 16 euros
+
+Scenario: Calculer le prix de 3 livres : 2 tome 1 et 1 tome 2 de Harry Potter
+Given Je vais au magasin
+When J'achète 2 livres identiques tome 1
+When J'achète 1 livre identique tome 2
+Then la réduction est de 0 %
+Then Je paie 16 euros
+

@@ -3,18 +3,19 @@ package fr.injection;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Tag;
-import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.TestInfo;
+import org.junit.jupiter.api.*;
+
+import java.util.HashMap;
 
 class TestInfoDemo {
 
     @BeforeEach
-    void init(TestInfo testInfo) {
+    void init(TestInfo testInfo, TestReporter testReporter) {
         String displayName = testInfo.getDisplayName();
         assertTrue(displayName.equals("TEST 1") || displayName.equals("test2()"));
+        HashMap<String, String> objectObjectHashMap = new HashMap<>();
+        objectObjectHashMap.put("param1", "value1");
+        testReporter.publishEntry(objectObjectHashMap);
     }
 
     @Test

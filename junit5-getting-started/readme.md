@@ -12,7 +12,7 @@
 ## Quelques changements
 
 - **`@BeforeEach`, `@BeforeAll`, `@AfterEach`, `@AfterAll`**      
-   au lieu de `@Before` `@After` `@BeforeTest` `@AfterTest`
+   au lieu de `@Before` `@After` `@BeforeClas` `@AfterClass`
 - **`@Disabled`** au lieu de `@Ignored`
 - **`@ExtendedWith`** remplace `@RunWith` et `@Rule`
 - **`DynamicTests`** remplace les tests `Parameterized`

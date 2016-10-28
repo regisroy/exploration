@@ -14,7 +14,9 @@ import org.junit.jupiter.api.extension.ParameterContext;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
-public class MockitoExtension implements TestInstancePostProcessor, ParameterResolver {
+public class MockitoExtension
+        implements TestInstancePostProcessor,
+        ParameterResolver {
 
     @Override
     public void postProcessTestInstance(Object testInstance, ExtensionContext context) {

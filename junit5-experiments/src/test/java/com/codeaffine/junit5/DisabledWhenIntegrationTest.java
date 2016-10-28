@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 @SuppressWarnings("WeakerAccess")
 public class DisabledWhenIntegrationTest {
 
-    class MemberClassCondition implements DisabledWhenCondition {
+    public static class MemberClassCondition implements DisabledWhenCondition {
         @Override
         public boolean isSatisfied() {
             return true;

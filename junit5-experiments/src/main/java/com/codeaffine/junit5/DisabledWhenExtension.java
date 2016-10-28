@@ -17,7 +17,7 @@ public class DisabledWhenExtension implements TestExecutionCondition {
 
     @Override
     public ConditionEvaluationResult evaluate(TestExtensionContext context) {
-        ConditionEvaluationResult result = ConditionEvaluationResult.enabled("");
+        ConditionEvaluationResult result = ConditionEvaluationResult.enabled("Enabled tout de même");
         DisabledWhenCondition disabledCondition = getDisabledWhenCondition(context.getElement(), context.getTestInstance());
         if (disabledCondition.isSatisfied()) {
             result = ConditionEvaluationResult.disabled("Disabled by @DisabledWhen");

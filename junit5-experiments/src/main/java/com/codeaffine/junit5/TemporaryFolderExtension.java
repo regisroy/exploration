@@ -12,7 +12,9 @@ import static java.util.Arrays.stream;
 
 @SuppressWarnings("WeakerAccess")
 public class TemporaryFolderExtension
-        implements AfterEachCallback, TestInstancePostProcessor, ParameterResolver {
+        implements AfterEachCallback,
+        TestInstancePostProcessor,
+        ParameterResolver {
 
     private final Collection<TemporaryFolder> tempFolders;
 
@@ -32,10 +34,10 @@ public class TemporaryFolderExtension
                 .forEach(field -> injectTemporaryFolder(testInstance, field));
     }
 
-    private void injectTemporaryFolder(Object instance, Field field) {
+    private void injectTemporaryFolder(Object testInstance, Field field) {
         field.setAccessible(true);
         try {
-            field.set(instance, createTempFolder());
+            field.set(testInstance, createTempFolder());
         } catch (IllegalAccessException iae) {
             throw new RuntimeException(iae);
         }
